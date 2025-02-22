@@ -1,0 +1,107 @@
+/* Enhanced Slide0.css - With Lighter Blue */
+
+.slide0-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #d0e1f9; /* Fallback color */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><circle cx="720" cy="160" r="100" fill="%23ffffff" opacity="0.8"></circle><circle cx="400" cy="240" r="60" fill="%23ffffff" opacity="0.6"></circle><circle cx="1040" cy="80" r="80" fill="%23ffffff" opacity="0.7"></circle><circle cx="200" cy="180" r="40" fill="%23ffffff" opacity="0.5"></circle><circle cx="1200" cy="220" r="50" fill="%23ffffff" opacity="0.6"></circle></svg>');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: circleAnimation 20s linear infinite;
+    color: #63b5ff; /* Lighter blue */
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@keyframes circleAnimation {
+    0% {
+        background-position: 0 100%;
+    }
+    50% {
+        background-position: -720px 100%; /* Move halfway to the left */
+    }
+    100% {
+        background-position: 0 100%; /* Return to the original position */
+    }
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    color: #002761; /* Lighter blue */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.axes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.axis-card {
+    background: linear-gradient(135deg, #ffffff, #eef7ff); /* Gradient background for visual appeal */
+    border-radius: 20px; /* Increased border-radius for softer edges */
+    padding: 2.5rem; /* Increased padding for better spacing */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    text-align: center;
+    border-left: 8px solid #0060b5; /* Lighter blue */
+    animation: subtleBounce 1.5s infinite ease-in-out; /* Subtle bounce animation */
+}
+
+/* Subtle bounce animation for axes cards */
+@keyframes subtleBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Reduced bounce height for subtlety */
+    }
+}
+
+.axis-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #004b8c; /* Lighter blue */
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.presenters-container {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.presenters-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #003c71; /* Lighter blue */
+    text-transform: uppercase;
+}
+
+.presenters-names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.presenter-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #434343; /* Lighter blue */
+    cursor: default; /* Remove pointer cursor */
+}

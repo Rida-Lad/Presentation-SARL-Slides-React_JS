@@ -1,0 +1,44 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#fullpage-slider {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.slide-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding: 2rem;
+}
+
+#fullpage-slider::-webkit-scrollbar {
+  width: 8px;
+}
+
+#fullpage-slider::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#fullpage-slider::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+#fullpage-slider::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

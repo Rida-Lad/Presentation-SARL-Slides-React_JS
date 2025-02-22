@@ -1,0 +1,209 @@
+/* General Styles */
+.slide3section {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem; /* Increased padding */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Floating Particles Background */
+.slide3section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" opacity="0.2"%3E%3Ccircle cx="50" cy="50" r="10" fill="%233b82f6" /%3E%3Ccircle cx="200" cy="150" r="15" fill="%233b82f6" /%3E%3Ccircle cx="400" cy="300" r="20" fill="%233b82f6" /%3E%3Ccircle cx="600" cy="450" r="12" fill="%233b82f6" /%3E%3Ccircle cx="750" cy="550" r="14" fill="%233b82f6" /%3E%3C/svg%3E');
+  background-size: 800px 600px;
+  animation: floatParticles 12s infinite ease-in-out alternate;
+  z-index: 0;
+}
+
+@keyframes floatParticles {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-50px, -50px);
+  }
+  50% {
+    transform: translate(50px, 30px);
+  }
+  75% {
+    transform: translate(-30px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Gradient Wave Background */
+.slide3section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(255, 255, 255, 0.2), rgba(59, 130, 246, 0.2));
+  animation: waveBackground 8s infinite linear;
+  z-index: 0;
+}
+
+@keyframes waveBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slide3container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 2rem; /* Increased padding */
+}
+
+/* Header Section */
+.slide3header {
+  margin-bottom: 2rem; /* Increased margin */
+}
+
+.slide3main-title {
+  font-size: 2.5rem; /* Increased font size */
+  color: #1e3a8a;
+  margin-bottom: 1rem; /* Increased margin */
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Column Layout */
+.slide3col {
+  flex: 1 1 100%; /* Full width for single column */
+  min-width: 300px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Card Styles */
+.slide3card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(230, 240, 255, 0.9));
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide3card-header {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* Gradient header */
+  color: white;
+  padding: 1rem; /* Increased padding */
+}
+
+.slide3card-title {
+  font-size: 1.9rem; /* Increased font size */
+  margin: 0;
+}
+
+.slide3card-body {
+  padding: 1.5rem; /* Increased padding */
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+/* Divider Between Advantages and Disadvantages */
+.slide3divider {
+  margin: 1.5rem 0; /* Increased margin */
+  border-top: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* Subheading Styles */
+.slide3subheading {
+  font-size: 1.25rem; /* Increased font size */
+  color: #1e3a8a;
+  margin-bottom: 1rem; /* Increased margin */
+}
+
+/* Icon Card Styles */
+.slide3icon-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Increased gap */
+  margin-bottom: 1rem; /* Increased margin */
+  padding: 1rem; /* Increased padding */
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slide3icon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Highlight Advantages with Light Green Background */
+.slide3icon-card.advantage {
+  background: rgba(34, 197, 94, 0.1); /* Light green */
+}
+
+/* Highlight Disadvantages with Red Icons */
+.slide3icon-card.disadvantage .slide3icon {
+  color: #ef4444; /* Red */
+}
+
+.slide3icon {
+  font-size: 1.5rem; /* Increased font size */
+  color: #3b82f6;
+}
+
+.slide3icon-card p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 1rem; /* Increased font size */
+  line-height: 1.6; /* Increased line height */
+}
+
+/* Scrollbar Styling for Card Body */
+.slide3card-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.slide3card-body::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+  border-radius: 4px;
+}
+
+.slide3card-body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+}
