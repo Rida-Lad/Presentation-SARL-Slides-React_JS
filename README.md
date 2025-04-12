@@ -15,8 +15,8 @@ An innovative, interactive presentation exploring SARL (Société à Responsabil
 
 <div align="center">
   <img src="./public/screenshots/hero-section.png" width="45%" alt="Hero Section">
-  <img src="./public/screenshots/carousel-view.png" width="45%" alt="NFT Carousel">
-  <img src="./public/screenshots/mobile-view.png" width="90%" alt="Mobile Responsive View" style="margin-top: 20px">
+  <img src="./public/screenshots/stats.png" width="45%" alt="Stats">
+  <img src="./public/screenshots/conclusion.png" width="45%" alt="conclusion" style="margin-top: 20px">
 </div>
 
 
