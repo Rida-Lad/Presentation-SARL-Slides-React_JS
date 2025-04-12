@@ -11,6 +11,15 @@
 
 An innovative, interactive presentation exploring SARL (Société à Responsabilité Limitée) business structures in Morocco, leveraging cutting-edge web technologies to deliver a compelling narrative.
 
+## 📸 Screenshots
+
+<div align="center">
+  <img src="./public/screenshots/hero-section.png" width="45%" alt="Hero Section">
+  <img src="./public/screenshots/carousel-view.png" width="45%" alt="NFT Carousel">
+  <img src="./public/screenshots/mobile-view.png" width="90%" alt="Mobile Responsive View" style="margin-top: 20px">
+</div>
+
+
 ## ✨ Key Features
 
 ### 🎨 Dynamic Presentation Design
